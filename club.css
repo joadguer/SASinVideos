@@ -1,0 +1,97 @@
+.clubContainer {
+    display: block;
+    /* max-width:fit-content; */
+    flex-wrap: wrap;
+    max-width: 100vw; /* Altura máxima: 100% del viewport */
+
+}
+
+.pagination {
+    margin-top: 20px;
+}
+
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
+
+.page-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.page-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #f0f0f0; /* Puedes cambiar el color de fondo */
+    width: 100%; /* Ocupa todo el ancho de la pantalla */   
+    padding: 1rem;
+    font-weight: bold;
+    
+}
+
+.club-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%; 
+    padding: 2rem;
+    font-weight: bolder;
+    color: #04133d;
+}
+
+
+.fila {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#gallery {
+    display: flex ;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#gallery img {
+    margin: 1%;
+    object-fit: cover;
+    width: 500px;
+    height: 320px;
+}
+
+
+.gallery-item{
+    max-height: 350px;
+}
+
+video {
+    width: 400px; 
+    height: 320px; 
+    object-fit: cover; 
+    margin: 15px;
+}
+
+.pagination {
+    margin-top: 20px;
+}
+
+.text-center {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    margin-top: 2rem;
+    padding: 1rem;
+    font-weight: bolder;
+}
+
