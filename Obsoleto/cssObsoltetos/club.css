@@ -14,14 +14,14 @@
     display: none;
 }
 
-.page.active {
+/* .page.active {
     display: block;
-}
+} */
 
-.page-title {
+/* .page-title {
     text-align: center;
     margin-bottom: 20px;
-}
+} */
 
 .page-title {
     display: flex;
@@ -29,11 +29,12 @@
     align-items: center;
     text-align: center;
     background-color: #f0f0f0; /* Puedes cambiar el color de fondo */
-    width: 100%; /* Ocupa todo el ancho de la pantalla */   
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
     padding: 1rem;
     font-weight: bold;
-    
+    margin-bottom: 20px; /* Mantiene el margen inferior */
 }
+
 
 .club-title{
     display: flex;
