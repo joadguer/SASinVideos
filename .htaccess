@@ -1,0 +1,10 @@
+RewriteEngine On
+RewriteBase /
+
+# Si la URL es algo como /about-us, redirige a /about-us.html
+RewriteRule ^(.*)/$ $1.html [L,R=301]
+
+# Si se solicita un archivo que tiene extensión .html, redirige la URL limpia.
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([a-zA-Z0-9_-]+)$ $1.html [L]

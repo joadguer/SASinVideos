@@ -63,7 +63,7 @@
                     <a class="nav-link dropdown-toggle" id="navbarDropdownOtros" role="button" data-toggle="dropdown" 
                        aria-haspopup="true" aria-expanded="false">Otros</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownOtros">
-                        <a class="dropdown-item" href="arturo-artico.html">Arturo Artico</a>
+                        <a class="dropdown-item" href="arturo-artico.html">Arturo Ártico</a>
                         <a class="dropdown-item" href="habilidades.html">Excepcionales</a>
                         <a class="dropdown-item" href="senderoDeReflexion.html">Senderos de Reflexion</a>
                         <a class="dropdown-item" href="legal.html">Legal</a>
@@ -89,8 +89,281 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 
-    <img src="assets/pinguino.webp" alt="Logo" width="100%">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=EB+Garamond:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
+        .storytale {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f5f5f5;
+            justify-content: center;
 
+        }
+
+        h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.5rem; /* Tamaño grande para resaltar el título */
+    color: #8B4513; /* Marrón elegante */
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+        .libro {
+            display: flex;
+            width: 100%;
+            max-width: 100%;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            /* perspective: 1500px; */
+        }
+        .pagina {
+            width: 50%;
+            height: 508px;
+            padding: 30px;
+            text-align: center;
+            display: none;
+            font-size: 1.5rem; /* Tamaño cómodo para lectura */
+            line-height: 1.8; /* Espaciado para que sea más legible */
+            text-align: left;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #fff8ec; /* Un tono más claro para las páginas */
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4); /* Sombra ligera */
+
+        }
+        .pagina img {
+            max-width: 100%;
+            border-radius: 10px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .volteada {
+            transform: rotateY(-180deg);
+            transition: transform 4s ease-in-out;
+            perspective: 1500px;
+        }
+
+        .controles {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .controles button {
+            cursor: pointer;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin: 5px 10px;
+        }
+
+    /* Pantallas pequeñas (celulares) */
+    @media (max-width: 1000px) {
+        .pagina {
+            width: 100%; /* Una página completa en pantallas pequeñas */
+        }
+
+        .libro {
+            display: flex;
+            width: 100%;
+            max-width: 100%;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            /* perspective: 1500px; */
+        }
+        .pagina {
+            height: 100%;
+            padding: 30px;
+            text-align: center;
+            display: none;
+            font-size: 1.5rem; 
+            line-height: 1.8; 
+            text-align: left;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #fff8ec; /* Un tono más claro para las páginas */
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4); /* Sombra ligera */
+
+        }
+        .pagina img {
+            max-width: 100%;
+            border-radius: 10px;
+            object-fit: fill;
+            border-radius: 10px;
+        }
+        .volteada {
+            transform: rotateY(-180deg);
+            transition: transform 4s ease-in-out;
+            perspective: 1500px;
+        }
+
+        .controles {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .controles button {
+            cursor: pointer;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin: 5px;
+        }
+    }        
+    </style>
+</head>
+<body>
+    <section class="StoryTale">
+            <div class="libro">
+                <div class="pagina" id="pagina1"><h2>Página 1</h2><p>Yo soy Arturo Ártico y quiero contarles una historia.
+                    Soy un pingüino que ha aprendido a ser feliz después de muchas historias
+                    complicadas.
+                    Cuando era pequeño, me costaba mucho entender a los demás chicos.
+                    A veces parecía que hablábamos idiomas diferentes, aunque todos habláramos el
+                    mismo idioma.</p></div>
+                <div class="pagina" id="pagina2"><img src="assets/arturoImgs/arturo1.jpeg" alt="Imagen 1"></div>
+
+                <div class="pagina" id="pagina3"><h2>Página 3</h2><p>Les voy a contar lo que pasó una vez en la escuela.
+                    Yo quería mucho jugar con Carlos, él era un chico especial, siempre
+                    llevaba una lonchera de mi serie favorita, jugaba con un montón de niños
+                    y todos se reían mucho con él. Pero conmigo no hablaba...</p></div>
+                <div class="pagina" id="pagina4"><img src="assets/arturoImgs/arturo2.jpeg" alt="Imagen 2"></div>
+
+                <div class="pagina" id="pagina5"><h2>Página 5</h2><p>Yo trataba de hablarle, de ser su amigo, pero era como si no me
+                    escuchara. Me ponía triste, y cuando me frustraba, hacía cosas que
+                    no debía:</p></div>
+                <div class="pagina" id="pagina6"><img src="assets/arturoImgs/arturo3.jpeg" alt="Imagen 3"></div>
+
+                <div class="pagina" id="pagina7"><h2>Página 7</h2><p>Hasta que un día, la maestra me regañó por quitarle la comida a
+                    Carlos para llamar su atención. Ese día, ella me explicó una regla muy
+                    importante. Me dijo que, si le hacía cosas que no le gustaban, como pegarle o
+                    molestarle, nunca iba a poder ser su amigo. Me explicó que debía intentar
+                    entender qué le gustaba a Carlos, y que tal vez si le preguntaba qué le gustaba
+                    hacer, podríamos encontrar algo en común.</p></div>
+                <div class="pagina" id="pagina8"><img src="assets/arturoImgs/arturo4.jpeg" alt="Imagen 4"></div>
+
+                <div class="pagina" id="pagina9"><h2>Página 9</h2><p>Me sugirió que incluso podría preguntarle si quería jugar conmigo, o si quería compartir
+                    su tiempo conmigo, tal vez incluso prestarle mi muñeco más preciado por un rato.
+                    Al principio, no me gustó para nada esa idea. Mi muñeco era mío y no quería que nadie
+                    lo tocara. Además, yo prefería hablar de los planetas, del sol, de lo lejos que está
+                    la Tierra del resto del espacio… No me interesaba mucho saber qué le gustaba
+                    a Carlos.</p></div>
+                <div class="pagina" id="pagina10"><img src="assets/arturoImgs/arturo5.jpeg" alt="Imagen 5"></div>
+
+                <div class="pagina" id="pagina11"><h2>Página 11</h2><p>Pero la maestra seguía insistiendo, me decía que, si no le preguntaba,
+                    nunca sabría qué cosas podía compartir con él. Así que un día, me armé de
+                    valor y le pregunté a Carlos qué le gustaba. Y ¿saben qué? ¡Desde ese día
+                    somos amigos! A Carlos le gustan los bloques, igual que a mí. Nos divertimos
+                    armando aviones y hablando sobre los cohetes que algún día podrían llevarnos
+                    al espacio para ver todos esos planetas de los que siempre hablo.</p></div>
+                <div class="pagina" id="pagina12"><img src="assets/arturoImgs/arturo6.jpeg" alt="Imagen 6"></div>
+
+                <div class="pagina" id="pagina13"><h2>Página 13</h2><p>Y ahora, cuando alguien me pregunta qué aprendí,
+                    les digo que ser amigo no siempre
+                    es fácil, pero a veces solo hace falta
+                    un poquito de paciencia</p></div>
+                <div class="pagina" id="pagina14"><img src="assets/arturoImgs/arturo7.jpeg" alt="Imagen 7"></div>
+
+            </div>
+        <div class="controles">
+            <button onclick="retroceder()">◀ Anterior</button>
+            <button onclick="avanzar()">Siguiente ▶</button>
+        </div>
+    </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let paginaActual = 0;
+            const paginas = document.querySelectorAll('.pagina');
+            let anchoPantalla = window.innerWidth;
+            window.addEventListener('resize', () => {
+                anchoPantalla = window.innerWidth;
+                console.log(anchoPantalla);
+            });
+            function mostrarPaginas() {
+
+                paginas.forEach((p, index) => { 
+                        // this is helpful for the style of the pages 
+                        p.style.display = 'none';
+                    // if (index <= paginaActual) {
+                    //     paginas[index+1].classList.add('volteada');
+                    // } else {
+                    //     paginas[index-1].classList.remove('volteada');
+                    // }
+                });
+                if (anchoPantalla < 768) {
+                    // Mobile: display only one page
+                    if (paginas[paginaActual]) {
+                        paginas[paginaActual].style.display = 'block';
+                    }
+                } else {
+                    // Desktop: display two pages
+                    if (paginas[paginaActual]) {
+                        paginas[paginaActual].style.display = 'block';
+                    }
+                    if (paginas[paginaActual + 1]) {
+                        paginas[paginaActual + 1].style.display = 'block';
+                    }
+                }
+
+    
+                // Mostrar la página actual y la siguiente si existe
+               
+
+              
+    
+                // Deshabilitar los botones si es necesario
+                document.querySelector('.controles button:first-child').disabled = paginaActual === 0;
+                document.querySelector('.controles button:last-child').disabled = paginaActual >= paginas.length - 2;
+            }
+    
+            function avanzar() {
+                if (!(anchoPantalla < 768)) {
+                    if (paginaActual < paginas.length - 1) {
+                        paginaActual += 2;
+                        mostrarPaginas();
+                    }
+                } else {
+                    if (paginaActual < paginas.length - 1) {
+                        paginaActual++;
+                        mostrarPaginas();
+                    }
+                }
+            }
+    
+            function retroceder() {
+                if(!(anchoPantalla < 768)){
+                    if (paginaActual > 0) {
+                        paginaActual -= 2;
+                        mostrarPaginas();
+                    }
+                } else {
+                    if (paginaActual > 0) {
+                        paginaActual--;
+                        mostrarPaginas();
+                    }
+                }
+            }
+    
+            // Iniciar mostrando las dos primeras páginas
+            mostrarPaginas();
+    
+            // Asignar los eventos a los botones
+            document.querySelector('.controles button:first-child').addEventListener('click', retroceder);
+            document.querySelector('.controles button:last-child').addEventListener('click', avanzar);
+        });
+    </script>
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-container">
