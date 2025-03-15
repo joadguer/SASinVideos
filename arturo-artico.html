@@ -295,6 +295,22 @@ h1 {
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit&hl=en"></script>
 
 <h1> Arturo Ártico</h1>
+
+    <!-- Elemento de audio oculto -->
+    <audio id="audio" loop>
+        <source src="assets/melodia.mp3" type="audio/mp3">
+        Tu navegador no soporta la reproducción de audio.
+    </audio>
+
+    <script>
+        window.onload = function() {
+            let audio = document.getElementById("audio");
+            audio.volume = 0.5; // Ajusta el volumen (0.0 a 1.0)
+            audio.play().catch(error => {
+                console.log("Reproducción automática bloqueada por el navegador.");
+            });
+        };
+    </script>
     <section class="StoryTale">
             <div class="libro">
                 <div class="pagina" id="pagina1"><h2>Página 1</h2><p>Yo soy Arturo Ártico y quiero contarles una historia.

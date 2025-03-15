@@ -76,7 +76,7 @@
             </ul>
         </div>
     </nav>
-    
+
 
     <!-- whatsapp logo -->
     <!-- WhatsApp Button -->
@@ -226,5 +226,14 @@
     </footer>
 
     <script src="finalJs/indexScript.js"></script>
+    <script>
+        window.onload = function() {
+            let myVideo = document.getElementById("myVideo");
+            myVideo.volume = 0.5; 
+            myVideo.play().catch(error => {
+                console.log("Reproducción automática bloqueada por el navegador.");
+            });
+        };
+    </script>
 </body>
 </html>
